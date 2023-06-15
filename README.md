@@ -1,6 +1,6 @@
 # Projeto de Banco de Dados Não Relacional
 
-Esta documentação tem como objetivo fornecer uma visão geral do projeto de migração do banco de dados relacional MySQL para o banco de dados não relacional MongoDB, focado em um provedor de internet. Aqui você encontrará informações sobre a estrutura do projeto, os motivos da escolha do MongoDB, o processo de migração e as considerações importantes a serem levadas em conta.
+Clique <a href="www.google.com" target="_blank">aqui</a> para acessar a documentação completa do projeto.
 
 ## Requisitos
 
