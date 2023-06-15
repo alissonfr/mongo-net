@@ -38,10 +38,12 @@ Essa consulta ajuda os gestores a identificar a produtividade e a carga de traba
 cada funcionário, permitindo uma distribuição equilibrada de tarefas e o reconhecimento do desempenho individual.
 */
 
-SELECT f.nome, COUNT(*) AS total_chamados
-FROM Funcionario f
-INNER JOIN Atendimento a ON f.cpf = a.fk_Funcionario_cpf
-GROUP BY f.cpf;
+SELECT f.nome, (
+    SELECT COUNT(*)
+    FROM Atendimento a
+    WHERE a.fk_Funcionario_cpf = f.cpf
+) AS total_chamados
+FROM Funcionario f;
 
 /***
 5. Consulta para calcular o total de contratos ativos por cliente
