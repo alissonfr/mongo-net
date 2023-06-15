@@ -74,3 +74,20 @@ Os softwares utlilizados neste projeto foram totalmente grátis.
 
 ## Modelo relacional
 
+<img src="relacional/Conceitual%20(Imagem).png" />
+
+<img src="relacional/Lógico%20(Imagem).png"  />
+
+
+
+
+
+
+
+
+
+
+
+## Conclusão
+
+Este documento forneceu uma visão geral do projeto de migração do banco de dados relacional MySQL para o banco de dados não relacional MongoDB em um provedor de internet. Abordamos a estrutura do projeto, os motivos para escolher o MongoDB, as etapas envolvidas na migração e as considerações importantes a serem levadas em conta. Com a conclusão deste projeto, espera-se que o provedor de internet se beneficie das vantagens do MongoDB, como escalabilidade, flexibilidade e desempenho, atendendo melhor às necessidades dos clientes e otimizando o gerenciamento dos dados.
