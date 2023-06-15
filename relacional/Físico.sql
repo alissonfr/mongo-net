@@ -1,7 +1,6 @@
-
-drop database if exists MONGONET;
-create database MONGONET;
-use MONGONET;
+DROP DATABASE IF EXISTS MONGONET;
+CREATE DATABASE MONGONET;
+USE MONGONET;
 
 CREATE TABLE Funcionario (
     cpf VARCHAR(14) PRIMARY KEY,
@@ -139,29 +138,3 @@ ALTER TABLE PessoaJuridica ADD CONSTRAINT FK_PessoaJuridica_Cliente
 ALTER TABLE Utiliza ADD CONSTRAINT FK_Utiliza_2
     FOREIGN KEY (fk_Atendimento_codAtendimento)
     REFERENCES Atendimento (codAtendimento);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

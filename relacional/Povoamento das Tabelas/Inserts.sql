@@ -72,4 +72,3 @@ INSERT INTO Utiliza (fk_Produto_codProduto, fk_Atendimento_codAtendimento, data,
         (1, 1, '2023-01-05', 2),
         (2, 2, '2023-02-10', 3),
         (3, 3, '2023-03-15', 4);
-
