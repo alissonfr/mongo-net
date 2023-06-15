@@ -13,7 +13,7 @@ O objetivo geral deste projeto é migrar o banco de dados relacional MySQL para 
 ## Instalação e configuração
 
 1. Instale o MongoDB [ve1.38.0] em seu sistema operacional. 
-* Você pode encontrar instruções de instalação no site oficial do MongoDB: [https://www.mongodb.com/docs/compass/current/release-notes/].
+* Você pode encontrar instruções de instalação no <a href="https://www.mongodb.com/docs/compass/current/release-notes/" target="_blank">site oficial do MongoDB</a>.
 
 2. Siga as instruções fornecidas na documentação oficial para instalar o MongoDB no seu sistema operacional específico.
 
@@ -24,7 +24,7 @@ No nosso projeto foi utilizado o Visual Studio Code para a elaboração do banco
 Após a instalação, abra o Visual Studio Code no seu sistema.
 - Instale a <a href="https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode" target="_blank">extensão do MongoDB para o Visual Studio Code</a>: 
 - Após o download, clique na nova extensão que acabou de ser adicionada à barra lateral esquerda do VS Code.
-- Adicione uma nova conexão passando a seguinte connection string: `mongodb+srv://osquatro:<password>@provedor.1goz2zc.mongodb.net/`
+- Adicione uma nova conexão passando a seguinte connection string: `mongodb+srv://osquatro:<senha>@provedor.1goz2zc.mongodb.net/`
 
 3. Executando
 - Após o MongoDB está totalmente configurado pegue os arquivos deste projeto e salve em um diretório local em sua máquina.
