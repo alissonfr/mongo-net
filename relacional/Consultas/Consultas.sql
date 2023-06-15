@@ -21,8 +21,8 @@ WHERE status = 'inativo'
 GROUP BY MONTH(dataFinal), YEAR(dataFinal);
 
 /***
-3. Consulta para listar os produtos mais vendidos
-Essa consulta mostra os produtos mais vendidos, permitindo que os gestores identifiquem quais itens 
+3. Consulta para listar os produtos mais utilizados
+Essa consulta mostra os produtos mais utilizados, permitindo que os gestores identifiquem quais itens 
 estão tendo maior demanda. Isso pode auxiliar na gestão de estoque, na definição de promoções e no lançamento de novos produtos.
 */
 
