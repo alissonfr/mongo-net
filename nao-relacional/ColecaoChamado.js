@@ -1,27 +1,6 @@
-// --------------------------------------
-// Banco de Dados Provedor de Internet
-// --------------------------------------
-
-// Exclui o Banco de Provedor caso necessário
-// db.dropDatabase();
-
-// Comando para criar o banco de dados da Empresa, que será chamado de provedor-base-mongo
 const database = 'provedor-base-mongo';
 use(database);
 
-// Exclui a coleção de Chamados caso necessário
-// db.chamado.remove();
-
-// Caso queira remover todos os documentos da coleção Chamado
-// db.chamado.deleteMany({});
-
-// MongoDB Playground, ambiente de desenvolvimento a partir da extensão do vs code
-// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
-
-// Comando que exibe a coleção completa de chamados
-// db.chamado.find();
-
-// Comando que insere todos os documentos da collection chamado
 db.chamado.insertMany([
     {
         "_id": 1,

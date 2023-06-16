@@ -7,7 +7,7 @@ a direcionar recursos e tomar decisões relacionadas à distribuição geográfi
 SELECT cidade, COUNT(*) AS total_contratos
 FROM Contrato
 WHERE status = 'ativo'
-GROUP BY cidade;
+GROUP BY cidade DESC;
 
 /***
 2. Consulta para obter o valor total de contratos fechados por mês
@@ -17,7 +17,7 @@ identificando os meses mais lucrativos e auxiliando na análise de desempenho fi
 
 SELECT MONTH(dataFinal) AS mes, YEAR(dataFinal) AS ano, SUM(valorContrato) AS valor_total
 FROM Contrato
-WHERE status = 'inativo'
+WHERE status != 'inativo'
 GROUP BY MONTH(dataFinal), YEAR(dataFinal);
 
 /***

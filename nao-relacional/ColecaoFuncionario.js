@@ -1,25 +1,5 @@
-// --------------------------------------
-// Banco de Dados Provedor de Internet
-// --------------------------------------
-
-// Exclui o Banco de Provedor caso necessário
-// db.dropDatabase();
-
-// Comando para criar o banco de dados da Empresa, que será chamado de provedor-base-mongo
 const database = 'provedor-base-mongo';
 use(database);
-
-// Exclui a coleção de funcionários caso necessário
-// db.funcionario.remove();
-
-// Caso queira remover todos os documentos da coleção funcionário
-// db.funcionario.deleteMany({});
-
-// MongoDB Playground, ambiente de desenvolvimento a partir da extensão do vs code
-// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
-
-// Comando que exibe a coleção completa de funcionários
-// db.funcionario.find();
 
 db.funcionario.insertMany([
   {
@@ -94,6 +74,6 @@ db.funcionario.insertMany([
       }
     ]
   }
-]);
+])
 
 
