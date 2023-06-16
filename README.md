@@ -42,10 +42,6 @@ Este documento forneceu uma visão geral do projeto de migração do banco de da
 - Arthur Lemos
 - Breno Tainan
 
-## Licença
-
-Os softwares utlilizados neste projeto foram totalmente grátis.
-
 <!-- ## Modelo relacional
 
 <img src="relacional/Conceitual%20(Imagem).png" />

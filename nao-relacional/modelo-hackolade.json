@@ -1,0 +1,1322 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "chamado",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": true,
+                    "GUID": "905977dd-5cc6-4d62-8df7-9378da4e18fe",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 10,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dataHoraChamado",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "color": "#555555",
+                    "GUID": "abf52efc-08e3-43f2-b781-617a948b67eb",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "descricao",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "9fcce27f-6104-4132-a3e3-47d161bf1259",
+                    "required": true,
+                    "sample": "Chamado de Configuração",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "numeroContrato",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "34be8b41-3d64-4c8b-b18f-f99a60a752bc",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 10,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "atendimento",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "descricao",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "primaryKey": false,
+                                    "GUID": "7aeb0486-0be7-4e27-9513-7d430afd083f",
+                                    "required": true,
+                                    "sample": "Atendimento Inicial",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "status",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "primaryKey": false,
+                                    "GUID": "a132aca8-ba2b-4b43-bbe1-032c52b23cce",
+                                    "required": true,
+                                    "sample": "ativo",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "dataInicio",
+                                    "isActivated": true,
+                                    "type": "date",
+                                    "primaryKey": false,
+                                    "color": "#555555",
+                                    "GUID": "f40d8721-6e15-4a9d-aa46-829a608edb81",
+                                    "required": true,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "dataFim",
+                                    "isActivated": true,
+                                    "color": "#555555",
+                                    "type": "multiple",
+                                    "primaryKey": false,
+                                    "multipleTypes": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "null",
+                                            "color": "#555555",
+                                            "GUID": "c6428fe8-7f2b-474d-9de9-63b11f401800",
+                                            "primaryKey": false
+                                        },
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "date",
+                                            "primaryKey": false,
+                                            "color": "#555555",
+                                            "GUID": "39d27da2-c278-42f0-9548-ac100c06c506"
+                                        }
+                                    ],
+                                    "GUID": "af685905-2b13-4de1-a9a2-34e9e00e195a",
+                                    "required": false,
+                                    "sample": null,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "cpfFuncionario",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "primaryKey": false,
+                                    "GUID": "c3b8d536-c1ad-42c2-931e-abba9661cca2",
+                                    "required": true,
+                                    "sample": "345.678.901-23",
+                                    "relationshipType": "Foreign Key",
+                                    "foreignCollection": "94fe18e4-5016-4671-991d-e5948f04edb2",
+                                    "foreignField": [
+                                        "94fe18e4-5016-4671-991d-e5948f04edb2",
+                                        "687251aa-aca4-4f07-946e-b0cbd5c7b2a4"
+                                    ],
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "name": "utiliza",
+                                    "isActivated": true,
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "name": "codProduto",
+                                                    "isActivated": true,
+                                                    "type": "numeric",
+                                                    "color": "#555555",
+                                                    "primaryKey": false,
+                                                    "GUID": "071be25d-8233-4827-965f-0fc8cc089ff6",
+                                                    "required": true,
+                                                    "mode": "integer32",
+                                                    "sample": 1,
+                                                    "parentRelationship": "2fb30020-a60a-4116-9b36-6f9a29dd0a70",
+                                                    "foreignCollection": "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
+                                                    "relationshipType": "Foreign Key",
+                                                    "foreignField": [
+                                                        "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
+                                                        "6a39fb0f-f90f-41ba-93af-854a3fae691c"
+                                                    ],
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "name": "nomeProduto",
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "color": "#555555",
+                                                    "primaryKey": false,
+                                                    "GUID": "9ad94b6c-7c02-4856-be34-b3014c569f8d",
+                                                    "required": true,
+                                                    "sample": "Cabo de Rede (10m)",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "name": "quantidade",
+                                                    "isActivated": true,
+                                                    "type": "numeric",
+                                                    "color": "#555555",
+                                                    "primaryKey": false,
+                                                    "GUID": "74390e19-23c8-48c5-af79-67fa6d96dc07",
+                                                    "required": true,
+                                                    "mode": "integer32",
+                                                    "sample": 2,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "name": "data",
+                                                    "isActivated": true,
+                                                    "type": "date",
+                                                    "primaryKey": false,
+                                                    "color": "#555555",
+                                                    "GUID": "ee157930-601d-4dec-bed6-31ac09411ae9",
+                                                    "required": true,
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "additionalProperties": true,
+                                            "color": "#555555",
+                                            "GUID": "6159511d-c2ba-412b-81b4-6ec7d80fc744",
+                                            "arrayItem": true,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "color": "#555555",
+                                    "primaryKey": false,
+                                    "GUID": "491009cd-6f6f-4097-b94a-6d1e3da3834b",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "color": "#555555",
+                            "GUID": "596e1eb8-da53-441d-a17c-9bf1d6cb61b3",
+                            "arrayItem": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "f1741c32-9bed-45f0-b76a-8f937982bdc2",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7106e28e-1179-4566-861f-5eaf4a3d3326",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "905977dd-5cc6-4d62-8df7-9378da4e18fe",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "9af275fb-abd5-4edf-866e-14cd9560035c"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "4532240b-704b-465d-b350-f59e243eb6d8",
+            "bucketId": "604135ad-5448-47ea-a125-666db40b0853",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "contrato",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": true,
+                    "GUID": "7ebc8880-871a-462a-8942-001a36bb1248",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 10,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "descricao",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "f0ab073d-a7f1-4fbe-86d8-9a96ba657637",
+                    "required": true,
+                    "sample": "Contrato de Segurança da Informação",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "valorContrato",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "eb8fe1a3-3add-4b8e-9ce8-1b9fe67e8867",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 2500,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dataInicio",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "color": "#555555",
+                    "GUID": "fbeb1e08-651a-458e-b421-a4bb56ec0be0",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dataFinal",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "color": "#555555",
+                    "GUID": "a019dabc-945e-4573-8384-d039c1c792be",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "status",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "9819d2f7-4ef6-49ce-9819-e474d295a103",
+                    "required": true,
+                    "sample": "ativo",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "cliente",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "tipo",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "75935e14-f1fa-4a5e-97e4-afc94169c184",
+                            "required": true,
+                            "sample": "PJ",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "cpf",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "e53c1276-e8b0-40be-be2d-f26c67f094ff",
+                            "required": false,
+                            "sample": "579.359.759-84",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "sexo",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "11bbabc9-7c38-440e-9040-3df14d51e1b2",
+                            "required": false,
+                            "sample": "m",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "email",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "8535e095-ad91-473b-ad33-889a7201a346",
+                            "required": true,
+                            "sample": "alissonrf@gmail.com",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "nome",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "645af2db-5db1-4877-a1c2-5ea6d19400d7",
+                            "required": false,
+                            "sample": "João Silva",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "cnpj",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "60242af7-3f93-42b1-9931-6434c51df789",
+                            "required": false,
+                            "sample": "44.555.666/0001-77",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "razaoSocial",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "da3c829b-e105-4ad8-8c75-893963b9ab66",
+                            "required": false,
+                            "sample": "Alisson Tech",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "c9f093fa-7ab1-41d9-84af-e9baae6ac55f",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "endereco",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "uf",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "dc971c84-73cc-47d6-b6a1-1ab32d16acde",
+                            "required": true,
+                            "sample": "BA",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "cidade",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "b27c47a3-b331-46a5-8139-7609ebe9fbed",
+                            "required": true,
+                            "sample": "Anagé",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "cep",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "93526076-b37c-4326-bfc8-aea704c74051",
+                            "required": true,
+                            "sample": "40000-000",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "bairro",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "792a3c36-91da-47d7-a08e-6b0b630fa6d1",
+                            "required": true,
+                            "sample": "Rio Vermelho",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "rua",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "cd4b995c-4256-4e1a-8985-bca2957597d0",
+                            "required": true,
+                            "sample": "Avenida J",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "numero",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "5c8d40db-23a4-45b4-a3d2-cc1fcf5eb548",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 987,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "3359da5a-c1c9-4894-88fe-ea462baafa5f",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "telefones",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "telefone",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "primaryKey": false,
+                                    "GUID": "77642f32-6772-469e-9eff-17cc19cb4e51",
+                                    "required": true,
+                                    "sample": "9876543210",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "color": "#555555",
+                            "GUID": "731a91e7-d098-4b43-b246-c1b5a1d4d0b9",
+                            "arrayItem": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "e80bb602-bc4c-4313-9517-c1f851f70d2f",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "3c00a1c1-8c37-4295-85e3-73d5d9580e31",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "7ebc8880-871a-462a-8942-001a36bb1248",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "4e8ea115-4027-4bd6-82de-70b8fdd6a0f1"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "30254321-948b-4936-ba48-55ae203389a1",
+            "bucketId": "604135ad-5448-47ea-a125-666db40b0853",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "funcionario",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": true,
+                    "GUID": "687251aa-aca4-4f07-946e-b0cbd5c7b2a4",
+                    "required": true,
+                    "sample": "345.678.901-23",
+                    "error": {},
+                    "childRelationships": [
+                        "55069518-8747-4537-89d2-eb51a72affb0"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "tipo",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "4baaf4f5-2a1c-4252-816b-2621ced32971",
+                    "required": true,
+                    "sample": "tecnico",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "email",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "0ccac4a4-31fe-4497-82db-3708b66a0297",
+                    "required": true,
+                    "sample": "pedrinho_m@gmail.com",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dataInicio",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "color": "#555555",
+                    "GUID": "fc0fc761-c2ad-4a97-84c2-e4fa044d22ce",
+                    "required": true,
+                    "sample": "ISODate(\"2022-03-01\")",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dataFim",
+                    "isActivated": true,
+                    "type": "null",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "a0af2937-59e2-4a1b-a1cf-4604ef4700e7",
+                    "sample": null,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "senha",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "d1c12fa9-9da7-4e99-8b91-9de8ed72dfab",
+                    "required": true,
+                    "sample": "senha3",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "login",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "e37eb7f3-2c8c-4d08-a723-05d3639cbe88",
+                    "required": true,
+                    "sample": "pedro1993",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "dataNascimento",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "color": "#555555",
+                    "GUID": "8d5bbc4c-c3c6-4d78-bb4b-b55a10abeced",
+                    "required": true,
+                    "sample": "ISODate(\"1990-03-01\")",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "nome",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "347b89cf-7963-4069-ab70-ca51bb58dc6d",
+                    "required": true,
+                    "sample": "Pedro Costa",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "endereco",
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "uf",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "98b45d42-b165-47d2-b128-95d8c25793f8",
+                            "required": true,
+                            "sample": "BA",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "cidade",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "33e0556a-d4c2-4cdd-be87-411c77ff8630",
+                            "required": true,
+                            "sample": "Vitória da Conquista",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "cep",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "e0f56ddd-d47c-4a7a-886e-19e7c9ae7658",
+                            "required": true,
+                            "sample": "40000-000",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "bairro",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "a6799ea3-9a9b-4156-960a-cf1f04119f6c",
+                            "required": true,
+                            "sample": "Miro Cairo",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "rua",
+                            "isActivated": true,
+                            "type": "string",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "421b0bd5-8d1c-46d3-a2ff-e509a2436019",
+                            "required": true,
+                            "sample": "Rua C",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "numero",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "color": "#555555",
+                            "primaryKey": false,
+                            "GUID": "a9b4f20f-1576-45f2-aa60-a2c0a300e52c",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 789,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "8334e86b-649a-4f0a-8005-5a3b15a87462",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "telefones",
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "name": "telefone",
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "color": "#555555",
+                                    "primaryKey": false,
+                                    "GUID": "2aa3a1de-6de2-449c-a013-8f03eb6e2f6f",
+                                    "required": true,
+                                    "sample": "1234567890",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "color": "#555555",
+                            "GUID": "bff49ef4-fece-4145-9f80-1c99261457c5",
+                            "arrayItem": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "adb073e4-d058-4f16-a9fb-452d10d0767e",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "beef986d-b233-4cbb-94c4-3eec4d73a2ed",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "687251aa-aca4-4f07-946e-b0cbd5c7b2a4",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "13107954-ff1a-48fc-8af6-947b0e274dce"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "94fe18e4-5016-4671-991d-e5948f04edb2",
+            "bucketId": "604135ad-5448-47ea-a125-666db40b0853",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "produto",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": true,
+                    "GUID": "6a39fb0f-f90f-41ba-93af-854a3fae691c",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 3,
+                    "error": {},
+                    "childRelationships": [
+                        "2fb30020-a60a-4116-9b36-6f9a29dd0a70"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "qtdAtual",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "94b019bf-2f97-4d55-b0b0-b6f4d50bf50b",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 20,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "qtdMin",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "f8a4f4c1-7cb5-4cd1-86e4-17eb05715a69",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 8,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "nome",
+                    "isActivated": true,
+                    "type": "string",
+                    "color": "#555555",
+                    "primaryKey": false,
+                    "GUID": "42d50159-42f6-4951-8a10-5eac1db5e4f9",
+                    "required": true,
+                    "sample": "Roteador INTELBRAS 1200mbps Dual-Band",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "06914071-e186-4d56-921e-83054fae1f61",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "6a39fb0f-f90f-41ba-93af-854a3fae691c",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "8e0a6bcc-c683-41bb-aa1e-959111526113"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
+            "bucketId": "604135ad-5448-47ea-a125-666db40b0853",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "provedor-base-mongo",
+            "type": "bucket",
+            "collectionIds": [
+                "4532240b-704b-465d-b350-f59e243eb6d8",
+                "30254321-948b-4936-ba48-55ae203389a1",
+                "94fe18e4-5016-4671-991d-e5948f04edb2",
+                "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72"
+            ],
+            "backgroundColor": {
+                "r": 33,
+                "g": 150,
+                "b": 243,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "604135ad-5448-47ea-a125-666db40b0853",
+            "hackoladeMeta": {},
+            "code": ""
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "chamadoProduto",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
+                    "6a39fb0f-f90f-41ba-93af-854a3fae691c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "4532240b-704b-465d-b350-f59e243eb6d8",
+                    "f1741c32-9bed-45f0-b76a-8f937982bdc2",
+                    "596e1eb8-da53-441d-a17c-9bf1d6cb61b3",
+                    "491009cd-6f6f-4097-b94a-6d1e3da3834b",
+                    "6159511d-c2ba-412b-81b4-6ec7d80fc744",
+                    "071be25d-8233-4827-965f-0fc8cc089ff6"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "2fb30020-a60a-4116-9b36-6f9a29dd0a70",
+            "parentCollection": "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
+            "childCollection": "4532240b-704b-465d-b350-f59e243eb6d8",
+            "hackoladeStyles": {
+                "GUID": "6927268b-0b08-4115-8b77-6622f4be3633",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1444.2576271186438,
+                        "y": 1327.3525423728815
+                    },
+                    {
+                        "x": 1429.2576271186438,
+                        "y": 1327.3525423728815
+                    },
+                    {
+                        "x": 1429.2576271186438,
+                        "y": 1451.3728813559308
+                    },
+                    {
+                        "x": 1492.725423728814,
+                        "y": 1451.3728813559308
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "funcionadoChamado",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "94fe18e4-5016-4671-991d-e5948f04edb2",
+                    "687251aa-aca4-4f07-946e-b0cbd5c7b2a4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "4532240b-704b-465d-b350-f59e243eb6d8",
+                    "f1741c32-9bed-45f0-b76a-8f937982bdc2",
+                    "596e1eb8-da53-441d-a17c-9bf1d6cb61b3",
+                    "c3b8d536-c1ad-42c2-931e-abba9661cca2"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "55069518-8747-4537-89d2-eb51a72affb0",
+            "parentCollection": "94fe18e4-5016-4671-991d-e5948f04edb2",
+            "childCollection": "4532240b-704b-465d-b350-f59e243eb6d8",
+            "hackoladeStyles": {
+                "GUID": "9b278225-7070-4a4f-ab5e-c8d998e087fc",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1444.2576271186438,
+                        "y": 1273.2813559322037
+                    },
+                    {
+                        "x": 1383.7237288135589,
+                        "y": 1273.2813559322037
+                    },
+                    {
+                        "x": 1383.7237288135589,
+                        "y": 1082.2966101694908
+                    },
+                    {
+                        "x": 1331,
+                        "y": 1082.2966101694908
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "New Relationship",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "aa10a536-1d94-44e5-be6c-74b1b0dccad9"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "604135ad-5448-47ea-a125-666db40b0853": "provedor-base-mongo",
+        "905977dd-5cc6-4d62-8df7-9378da4e18fe": "_id",
+        "abf52efc-08e3-43f2-b781-617a948b67eb": "dataHoraChamado",
+        "9fcce27f-6104-4132-a3e3-47d161bf1259": "descricao",
+        "34be8b41-3d64-4c8b-b18f-f99a60a752bc": "numeroContrato",
+        "f1741c32-9bed-45f0-b76a-8f937982bdc2": "atendimento",
+        "7aeb0486-0be7-4e27-9513-7d430afd083f": "descricao",
+        "a132aca8-ba2b-4b43-bbe1-032c52b23cce": "status",
+        "f40d8721-6e15-4a9d-aa46-829a608edb81": "dataInicio",
+        "af685905-2b13-4de1-a9a2-34e9e00e195a": "dataFim",
+        "c3b8d536-c1ad-42c2-931e-abba9661cca2": "cpfFuncionario",
+        "491009cd-6f6f-4097-b94a-6d1e3da3834b": "utiliza",
+        "071be25d-8233-4827-965f-0fc8cc089ff6": "codProduto",
+        "9ad94b6c-7c02-4856-be34-b3014c569f8d": "nomeProduto",
+        "74390e19-23c8-48c5-af79-67fa6d96dc07": "quantidade",
+        "ee157930-601d-4dec-bed6-31ac09411ae9": "data",
+        "4532240b-704b-465d-b350-f59e243eb6d8": "chamado",
+        "7ebc8880-871a-462a-8942-001a36bb1248": "_id",
+        "f0ab073d-a7f1-4fbe-86d8-9a96ba657637": "descricao",
+        "eb8fe1a3-3add-4b8e-9ce8-1b9fe67e8867": "valorContrato",
+        "fbeb1e08-651a-458e-b421-a4bb56ec0be0": "dataInicio",
+        "a019dabc-945e-4573-8384-d039c1c792be": "dataFinal",
+        "9819d2f7-4ef6-49ce-9819-e474d295a103": "status",
+        "c9f093fa-7ab1-41d9-84af-e9baae6ac55f": "cliente",
+        "75935e14-f1fa-4a5e-97e4-afc94169c184": "tipo",
+        "e53c1276-e8b0-40be-be2d-f26c67f094ff": "cpf",
+        "11bbabc9-7c38-440e-9040-3df14d51e1b2": "sexo",
+        "8535e095-ad91-473b-ad33-889a7201a346": "email",
+        "645af2db-5db1-4877-a1c2-5ea6d19400d7": "nome",
+        "60242af7-3f93-42b1-9931-6434c51df789": "cnpj",
+        "da3c829b-e105-4ad8-8c75-893963b9ab66": "razaoSocial",
+        "3359da5a-c1c9-4894-88fe-ea462baafa5f": "endereco",
+        "dc971c84-73cc-47d6-b6a1-1ab32d16acde": "uf",
+        "b27c47a3-b331-46a5-8139-7609ebe9fbed": "cidade",
+        "93526076-b37c-4326-bfc8-aea704c74051": "cep",
+        "792a3c36-91da-47d7-a08e-6b0b630fa6d1": "bairro",
+        "cd4b995c-4256-4e1a-8985-bca2957597d0": "rua",
+        "5c8d40db-23a4-45b4-a3d2-cc1fcf5eb548": "numero",
+        "e80bb602-bc4c-4313-9517-c1f851f70d2f": "telefones",
+        "77642f32-6772-469e-9eff-17cc19cb4e51": "telefone",
+        "30254321-948b-4936-ba48-55ae203389a1": "contrato",
+        "687251aa-aca4-4f07-946e-b0cbd5c7b2a4": "_id",
+        "4baaf4f5-2a1c-4252-816b-2621ced32971": "tipo",
+        "0ccac4a4-31fe-4497-82db-3708b66a0297": "email",
+        "fc0fc761-c2ad-4a97-84c2-e4fa044d22ce": "dataInicio",
+        "a0af2937-59e2-4a1b-a1cf-4604ef4700e7": "dataFim",
+        "d1c12fa9-9da7-4e99-8b91-9de8ed72dfab": "senha",
+        "e37eb7f3-2c8c-4d08-a723-05d3639cbe88": "login",
+        "8d5bbc4c-c3c6-4d78-bb4b-b55a10abeced": "dataNascimento",
+        "347b89cf-7963-4069-ab70-ca51bb58dc6d": "nome",
+        "8334e86b-649a-4f0a-8005-5a3b15a87462": "endereco",
+        "98b45d42-b165-47d2-b128-95d8c25793f8": "uf",
+        "33e0556a-d4c2-4cdd-be87-411c77ff8630": "cidade",
+        "e0f56ddd-d47c-4a7a-886e-19e7c9ae7658": "cep",
+        "a6799ea3-9a9b-4156-960a-cf1f04119f6c": "bairro",
+        "421b0bd5-8d1c-46d3-a2ff-e509a2436019": "rua",
+        "a9b4f20f-1576-45f2-aa60-a2c0a300e52c": "numero",
+        "adb073e4-d058-4f16-a9fb-452d10d0767e": "telefones",
+        "2aa3a1de-6de2-449c-a013-8f03eb6e2f6f": "telefone",
+        "94fe18e4-5016-4671-991d-e5948f04edb2": "funcionario",
+        "6a39fb0f-f90f-41ba-93af-854a3fae691c": "_id",
+        "94b019bf-2f97-4d55-b0b0-b6f4d50bf50b": "qtdAtual",
+        "f8a4f4c1-7cb5-4cd1-86e4-17eb05715a69": "qtdMin",
+        "42d50159-42f6-4951-8a10-5eac1db5e4f9": "nome",
+        "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72": "produto",
+        "2fb30020-a60a-4116-9b36-6f9a29dd0a70": "chamadoProduto",
+        "55069518-8747-4537-89d2-eb51a72affb0": "funcionadoChamado",
+        "aa10a536-1d94-44e5-be6c-74b1b0dccad9": "New Relationship"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f1c129f0-3cd8-4c60-94fd-78f3310c1fd0"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "f4203305-3595-44a2-82c1-724b3379a8c0"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "7c742e2d-126c-4b7c-94fe-f849f8fb7f05"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-06-16T04:48:27.422Z",
+    "GUID": "c5d6bf10-13ef-48fa-a1b0-a7db07b07e3d",
+    "isLineageEnabled": false,
+    "lastModifTS": "2023-06-16T05:10:21.478Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.6"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "4532240b-704b-465d-b350-f59e243eb6d8",
+                        "x": 1444.2576271186438,
+                        "y": 1061.0237288135595,
+                        "width": 347,
+                        "height": 336,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "30254321-948b-4936-ba48-55ae203389a1",
+                        "x": 742.0316384180788,
+                        "y": 1042.6305084745775,
+                        "width": 266,
+                        "height": 462,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "94fe18e4-5016-4671-991d-e5948f04edb2",
+                        "x": 1050,
+                        "y": 1048.6983050847457,
+                        "width": 281,
+                        "height": 377,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
+                        "x": 1492.725423728814,
+                        "y": 1419.450847457626,
+                        "width": 237,
+                        "height": 102,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 702.0316384180788,
+                        "y": 1002.6305084745775,
+                        "GUID": "604135ad-5448-47ea-a125-666db40b0853"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {}
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    }
+}

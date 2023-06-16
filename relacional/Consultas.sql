@@ -17,7 +17,7 @@ identificando os meses mais lucrativos e auxiliando na análise de desempenho fi
 
 SELECT MONTH(dataFinal) AS mes, YEAR(dataFinal) AS ano, SUM(valorContrato) AS valor_total
 FROM Contrato
-WHERE status != 'inativo'
+WHERE status = 'ativo'
 GROUP BY MONTH(dataFinal), YEAR(dataFinal);
 
 /***
@@ -43,7 +43,8 @@ SELECT f.nome, (
     FROM Atendimento a
     WHERE a.fk_Funcionario_cpf = f.cpf
 ) AS total_chamados
-FROM Funcionario f;
+FROM Funcionario f
+ORDER BY total_chamados DESC;
 
 /***
 5. Consulta para calcular o total de contratos ativos por cliente
