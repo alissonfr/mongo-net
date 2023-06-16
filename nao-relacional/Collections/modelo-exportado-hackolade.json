@@ -52,6 +52,12 @@
                     "required": true,
                     "mode": "integer32",
                     "sample": 10,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "30254321-948b-4936-ba48-55ae203389a1",
+                    "foreignField": [
+                        "30254321-948b-4936-ba48-55ae203389a1",
+                        "7ebc8880-871a-462a-8942-001a36bb1248"
+                    ],
                     "error": {}
                 },
                 {
@@ -296,7 +302,10 @@
                     "required": true,
                     "mode": "integer32",
                     "sample": 10,
-                    "error": {}
+                    "error": {},
+                    "childRelationships": [
+                        "aa10a536-1d94-44e5-be6c-74b1b0dccad9"
+                    ]
                 },
                 {
                     "code": "",
@@ -995,20 +1004,20 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1445.3428341798394,
-                        "y": 1327.3525423728815
+                        "x": 1093.3428341798394,
+                        "y": 1301.0237288135595
                     },
                     {
-                        "x": 1430.3428341798397,
-                        "y": 1327.3525423728815
+                        "x": 1087.3428341798394,
+                        "y": 1301.0237288135595
                     },
                     {
-                        "x": 1430.3428341798397,
-                        "y": 1451.3728813559308
+                        "x": 1087.3428341798394,
+                        "y": 1413.3728813559308
                     },
                     {
-                        "x": 1493.8106307900098,
-                        "y": 1451.3728813559308
+                        "x": 1137.8106307900098,
+                        "y": 1413.3728813559308
                     }
                 ],
                 "sides": [
@@ -1042,27 +1051,79 @@
             "childCollection": "4532240b-704b-465d-b350-f59e243eb6d8",
             "hackoladeStyles": {
                 "GUID": "9b278225-7070-4a4f-ab5e-c8d998e087fc",
-                "autoPositioning": true,
+                "autoPositioning": false,
                 "type": "Orthogonal",
                 "thickness": 2,
                 "color": "#79c4ff",
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1445.3428341798394,
-                        "y": 1229.0237288135595
+                        "x": 1440.3428341798394,
+                        "y": 1247.0237288135595
                     },
                     {
-                        "x": 1388.7140206205177,
-                        "y": 1229.0237288135595
+                        "x": 1455.3428341798394,
+                        "y": 1247.0237288135595
                     },
                     {
-                        "x": 1388.7140206205177,
-                        "y": 1218.1983050847457
+                        "x": 1455.3428341798394,
+                        "y": 1069.6983050847457
                     },
                     {
-                        "x": 1332.085207061196,
-                        "y": 1218.1983050847457
+                        "x": 1487.085207061196,
+                        "y": 1069.6983050847457
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "ContratoChamado",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "30254321-948b-4936-ba48-55ae203389a1",
+                    "7ebc8880-871a-462a-8942-001a36bb1248"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "4532240b-704b-465d-b350-f59e243eb6d8",
+                    "34be8b41-3d64-4c8b-b18f-f99a60a752bc"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "aa10a536-1d94-44e5-be6c-74b1b0dccad9",
+            "parentCollection": "30254321-948b-4936-ba48-55ae203389a1",
+            "childCollection": "4532240b-704b-465d-b350-f59e243eb6d8",
+            "hackoladeStyles": {
+                "GUID": "554987d0-a85e-49f5-84e5-05f9b495bee7",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1093.3428341798394,
+                        "y": 1122.0237288135595
+                    },
+                    {
+                        "x": 1063.729839829557,
+                        "y": 1122.0237288135595
+                    },
+                    {
+                        "x": 1063.729839829557,
+                        "y": 1063.1305084745775
+                    },
+                    {
+                        "x": 1034.1168454792746,
+                        "y": 1063.1305084745775
                     }
                 ],
                 "sides": [
@@ -1070,16 +1131,6 @@
                     "right"
                 ]
             }
-        },
-        {
-            "name": "New Relationship",
-            "relationshipType": "",
-            "parentField": [],
-            "parentCardinality": "1",
-            "childField": [],
-            "isActivated": true,
-            "childCardinality": "1",
-            "GUID": "aa10a536-1d94-44e5-be6c-74b1b0dccad9"
         }
     ],
     "users": [],
@@ -1151,7 +1202,7 @@
         "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72": "produto",
         "2fb30020-a60a-4116-9b36-6f9a29dd0a70": "chamadoProduto",
         "55069518-8747-4537-89d2-eb51a72affb0": "funcionadoChamado",
-        "aa10a536-1d94-44e5-be6c-74b1b0dccad9": "New Relationship"
+        "aa10a536-1d94-44e5-be6c-74b1b0dccad9": "ContratoChamado"
     },
     "definitions": {
         "type": "definitions",
@@ -1176,7 +1227,7 @@
     "creationTS": "2023-06-16T04:48:27.422Z",
     "GUID": "c5d6bf10-13ef-48fa-a1b0-a7db07b07e3d",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-06-16T14:04:09.105Z",
+    "lastModifTS": "2023-06-16T15:01:06.101Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1194,32 +1245,32 @@
                 "erd": [
                     {
                         "GUID": "4532240b-704b-465d-b350-f59e243eb6d8",
-                        "x": 1445.3428341798394,
-                        "y": 1061.0237288135595,
+                        "x": 1093.3428341798394,
+                        "y": 1035.0237288135595,
                         "width": 347,
                         "height": 336,
                         "color": {}
                     },
                     {
                         "GUID": "30254321-948b-4936-ba48-55ae203389a1",
-                        "x": 743.1168454792746,
-                        "y": 1042.6305084745775,
-                        "width": 272,
+                        "x": 761.1168454792746,
+                        "y": 1025.6305084745775,
+                        "width": 273,
                         "height": 429,
                         "color": {}
                     },
                     {
                         "GUID": "94fe18e4-5016-4671-991d-e5948f04edb2",
-                        "x": 1051.085207061196,
-                        "y": 1048.6983050847457,
+                        "x": 1487.085207061196,
+                        "y": 1038.6983050847457,
                         "width": 281,
                         "height": 339,
                         "color": {}
                     },
                     {
                         "GUID": "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
-                        "x": 1493.8106307900098,
-                        "y": 1419.450847457626,
+                        "x": 1137.8106307900098,
+                        "y": 1381.450847457626,
                         "width": 237,
                         "height": 102,
                         "color": {}
@@ -1233,8 +1284,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 703.1168454792746,
-                        "y": 1002.6305084745775,
+                        "x": 721.1168454792746,
+                        "y": 985.6305084745775,
                         "GUID": "604135ad-5448-47ea-a125-666db40b0853"
                     }
                 ],
