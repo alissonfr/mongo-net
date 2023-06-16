@@ -17,7 +17,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": [
+                "produtosUtilizados": [
                     {
                         "codProduto": 1,
                         "nomeProduto": "Cabo de Rede (10m)",
@@ -47,7 +47,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": [
+                "produtos": [
                     {
                         "codProduto": 2,
                         "nomeProduto": "Roteador TP-LINK Dual-Band",
@@ -79,7 +79,7 @@ db.chamado.insertMany([
                     "$date": "2023-03-20T00:00:00Z"
                 },
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": [
+                "produtos": [
                     {
                         "codProduto": 3,
                         "nomeProduto": "Roteador INTELBRAS 1200mbps Dual-Bank",
@@ -109,7 +109,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "123.456.789-01",
-                "utiliza": []
+                "produtos": []
             }
         ]
     },
@@ -130,7 +130,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "234.567.890-12",
-                "utiliza": []
+                "produtos": []
             }
         ]
     },
@@ -153,7 +153,7 @@ db.chamado.insertMany([
                     "$date": "2023-06-20T00:00:00Z"
                 },
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": []
+                "produtos": []
             }
         ]
     },
@@ -174,7 +174,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": []
+                "produtos": []
             }
         ]
     },
@@ -195,7 +195,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": []
+                "produtos": []
             }
         ]
     },
@@ -216,7 +216,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": []
+                "produtos": []
             }
         ]
     },
@@ -237,7 +237,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "utiliza": []
+                "produtos": []
             }
         ]
     }
