@@ -1,5 +1,4 @@
-const database = 'provedor-base-mongo';
-use(database);
+use("provedor-base-mongo");
 
 db.funcionario.insertMany([
   {

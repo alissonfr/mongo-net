@@ -1,6 +1,4 @@
-// Comando para utilizar o banco de dados da Empresa, para que as consultas sejam realizadas
-const database = 'provedor-base-mongo';
-use(database);
+use("provedor-base-mongo");
 
 /***
 1. Consulta para obter o total de contratos ativos por cidade

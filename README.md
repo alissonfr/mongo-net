@@ -37,8 +37,8 @@ Este documento forneceu uma visão geral do projeto de migração do banco de da
 
 ## Integrantes do projeto
 
-- Anderson Mendes
 - Alisson Rodrigues
+- Anderson Mendes
 - Arthur Lemos
 - Breno Tainan
 
