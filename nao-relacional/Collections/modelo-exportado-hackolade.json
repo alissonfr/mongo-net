@@ -150,7 +150,7 @@
                                 },
                                 {
                                     "code": "",
-                                    "name": "utiliza",
+                                    "name": "produtos",
                                     "isActivated": true,
                                     "type": "array",
                                     "properties": [
@@ -543,42 +543,17 @@
                     "error": {}
                 },
                 {
-                    "code": "",
                     "name": "telefones",
+                    "hackoladeMeta": {},
                     "isActivated": true,
                     "type": "array",
-                    "properties": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "document",
-                            "properties": [
-                                {
-                                    "code": "",
-                                    "name": "telefone",
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "color": "#555555",
-                                    "primaryKey": false,
-                                    "GUID": "77642f32-6772-469e-9eff-17cc19cb4e51",
-                                    "required": true,
-                                    "sample": "9876543210",
-                                    "error": {}
-                                }
-                            ],
-                            "additionalProperties": true,
-                            "color": "#555555",
-                            "GUID": "731a91e7-d098-4b43-b246-c1b5a1d4d0b9",
-                            "arrayItem": true,
-                            "error": {}
-                        }
-                    ],
+                    "properties": [],
                     "additionalItems": true,
-                    "color": "#555555",
+                    "error": {},
                     "primaryKey": false,
-                    "GUID": "e80bb602-bc4c-4313-9517-c1f851f70d2f",
+                    "code": "",
                     "required": true,
-                    "error": {}
+                    "GUID": "e80bb602-bc4c-4313-9517-c1f851f70d2f"
                 }
             ],
             "definitions": {
@@ -822,32 +797,7 @@
                     "name": "telefones",
                     "isActivated": true,
                     "type": "array",
-                    "properties": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "type": "document",
-                            "properties": [
-                                {
-                                    "code": "",
-                                    "name": "telefone",
-                                    "isActivated": true,
-                                    "type": "string",
-                                    "color": "#555555",
-                                    "primaryKey": false,
-                                    "GUID": "2aa3a1de-6de2-449c-a013-8f03eb6e2f6f",
-                                    "required": true,
-                                    "sample": "1234567890",
-                                    "error": {}
-                                }
-                            ],
-                            "additionalProperties": true,
-                            "color": "#555555",
-                            "GUID": "bff49ef4-fece-4145-9f80-1c99261457c5",
-                            "arrayItem": true,
-                            "error": {}
-                        }
-                    ],
+                    "properties": [],
                     "additionalItems": true,
                     "color": "#555555",
                     "primaryKey": false,
@@ -997,9 +947,9 @@
                 "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72"
             ],
             "backgroundColor": {
-                "r": 33,
-                "g": 150,
-                "b": 243,
+                "r": 216,
+                "g": 0,
+                "b": 115,
                 "a": 1
             },
             "show": true,
@@ -1045,19 +995,19 @@
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1444.2576271186438,
+                        "x": 1445.3428341798394,
                         "y": 1327.3525423728815
                     },
                     {
-                        "x": 1429.2576271186438,
+                        "x": 1430.3428341798397,
                         "y": 1327.3525423728815
                     },
                     {
-                        "x": 1429.2576271186438,
+                        "x": 1430.3428341798397,
                         "y": 1451.3728813559308
                     },
                     {
-                        "x": 1492.725423728814,
+                        "x": 1493.8106307900098,
                         "y": 1451.3728813559308
                     }
                 ],
@@ -1092,27 +1042,27 @@
             "childCollection": "4532240b-704b-465d-b350-f59e243eb6d8",
             "hackoladeStyles": {
                 "GUID": "9b278225-7070-4a4f-ab5e-c8d998e087fc",
-                "autoPositioning": false,
+                "autoPositioning": true,
                 "type": "Orthogonal",
                 "thickness": 2,
                 "color": "#79c4ff",
                 "dataType": "",
                 "shape": [
                     {
-                        "x": 1444.2576271186438,
-                        "y": 1273.2813559322037
+                        "x": 1445.3428341798394,
+                        "y": 1229.0237288135595
                     },
                     {
-                        "x": 1383.7237288135589,
-                        "y": 1273.2813559322037
+                        "x": 1388.7140206205177,
+                        "y": 1229.0237288135595
                     },
                     {
-                        "x": 1383.7237288135589,
-                        "y": 1082.2966101694908
+                        "x": 1388.7140206205177,
+                        "y": 1218.1983050847457
                     },
                     {
-                        "x": 1331,
-                        "y": 1082.2966101694908
+                        "x": 1332.085207061196,
+                        "y": 1218.1983050847457
                     }
                 ],
                 "sides": [
@@ -1146,7 +1096,7 @@
         "f40d8721-6e15-4a9d-aa46-829a608edb81": "dataInicio",
         "af685905-2b13-4de1-a9a2-34e9e00e195a": "dataFim",
         "c3b8d536-c1ad-42c2-931e-abba9661cca2": "cpfFuncionario",
-        "491009cd-6f6f-4097-b94a-6d1e3da3834b": "utiliza",
+        "491009cd-6f6f-4097-b94a-6d1e3da3834b": "produtos",
         "071be25d-8233-4827-965f-0fc8cc089ff6": "codProduto",
         "9ad94b6c-7c02-4856-be34-b3014c569f8d": "nomeProduto",
         "74390e19-23c8-48c5-af79-67fa6d96dc07": "quantidade",
@@ -1193,7 +1143,6 @@
         "421b0bd5-8d1c-46d3-a2ff-e509a2436019": "rua",
         "a9b4f20f-1576-45f2-aa60-a2c0a300e52c": "numero",
         "adb073e4-d058-4f16-a9fb-452d10d0767e": "telefones",
-        "2aa3a1de-6de2-449c-a013-8f03eb6e2f6f": "telefone",
         "94fe18e4-5016-4671-991d-e5948f04edb2": "funcionario",
         "6a39fb0f-f90f-41ba-93af-854a3fae691c": "_id",
         "94b019bf-2f97-4d55-b0b0-b6f4d50bf50b": "qtdAtual",
@@ -1227,14 +1176,17 @@
     "creationTS": "2023-06-16T04:48:27.422Z",
     "GUID": "c5d6bf10-13ef-48fa-a1b0-a7db07b07e3d",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-06-16T05:10:21.478Z",
+    "lastModifTS": "2023-06-16T14:04:09.105Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.10.6"
+        "version": "6.10.7"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
     },
     "settings": {
         "centralPane": {
@@ -1242,7 +1194,7 @@
                 "erd": [
                     {
                         "GUID": "4532240b-704b-465d-b350-f59e243eb6d8",
-                        "x": 1444.2576271186438,
+                        "x": 1445.3428341798394,
                         "y": 1061.0237288135595,
                         "width": 347,
                         "height": 336,
@@ -1250,23 +1202,23 @@
                     },
                     {
                         "GUID": "30254321-948b-4936-ba48-55ae203389a1",
-                        "x": 742.0316384180788,
+                        "x": 743.1168454792746,
                         "y": 1042.6305084745775,
-                        "width": 266,
-                        "height": 462,
+                        "width": 272,
+                        "height": 429,
                         "color": {}
                     },
                     {
                         "GUID": "94fe18e4-5016-4671-991d-e5948f04edb2",
-                        "x": 1050,
+                        "x": 1051.085207061196,
                         "y": 1048.6983050847457,
                         "width": 281,
-                        "height": 377,
+                        "height": 339,
                         "color": {}
                     },
                     {
                         "GUID": "c2a7f6b6-b70b-4e5e-b8ba-56b4075e2d72",
-                        "x": 1492.725423728814,
+                        "x": 1493.8106307900098,
                         "y": 1419.450847457626,
                         "width": 237,
                         "height": 102,
@@ -1281,7 +1233,7 @@
                 },
                 "buckets": [
                     {
-                        "x": 702.0316384180788,
+                        "x": 703.1168454792746,
                         "y": 1002.6305084745775,
                         "GUID": "604135ad-5448-47ea-a125-666db40b0853"
                     }
@@ -1315,8 +1267,5 @@
             "collapsedNodes": [],
             "shouldDistributeCollections": false
         }
-    },
-    "hackoladeMeta": {
-        "customPropertiesUpdated": true
     }
 }
