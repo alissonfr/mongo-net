@@ -20,9 +20,7 @@ db.funcionario.insertMany([
       "numero": 123
     },
     "telefones": [
-      {
-        "telefone": "1234567890"
-      }
+      "1234567890"
     ]
   },
   {
@@ -44,9 +42,7 @@ db.funcionario.insertMany([
       "numero": 456
     },
     "telefones": [
-      {
-        "telefone": "2345678901"
-      }
+      "2345678901"
     ]
   },
   {
@@ -68,9 +64,7 @@ db.funcionario.insertMany([
       "numero": 789
     },
     "telefones": [
-      {
-        "telefone": "3456789012"
-      }
+      "3456789012"
     ]
   }
 ])

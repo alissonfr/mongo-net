@@ -29,9 +29,7 @@ db.contrato.insertMany(
           "numero": 123
         },
         "telefones": [
-          {
-            "telefone": "9876543210"
-          }
+          "9876543210"
         ]
       },
 
@@ -62,9 +60,7 @@ db.contrato.insertMany(
           "numero": 456
         },
         "telefones": [
-          {
-            "telefone": "8765432109"
-          }
+          "8765432109"
         ]
       },
 
@@ -95,9 +91,7 @@ db.contrato.insertMany(
           "numero": 789
         },
         "telefones": [
-          {
-            "telefone": "8765432109"
-          }
+          "8765432109"
         ]
       },
 
@@ -157,9 +151,7 @@ db.contrato.insertMany(
           "numero": 654
         },
         "telefones": [
-          {
-            "telefone": "7654321098"
-          }
+          "7654321098"
         ]
       },
 
@@ -190,9 +182,7 @@ db.contrato.insertMany(
           "numero": 321
         },
         "telefones": [
-          {
-            "telefone": "7654321098"
-          }
+          "7654321098"
         ]
       },
 
@@ -223,9 +213,7 @@ db.contrato.insertMany(
           "numero": 159
         },
         "telefones": [
-          {
-            "telefone": "9876543210"
-          }
+          "9876543210"
         ]
       },
 
@@ -256,9 +244,7 @@ db.contrato.insertMany(
           "numero": 753
         },
         "telefones": [
-          {
-            "telefone": "8765432109"
-          }
+          "8765432109"
         ]
       },
 
@@ -289,9 +275,7 @@ db.contrato.insertMany(
           "numero": 951
         },
         "telefones": [
-          {
-            "telefone": "9876543210"
-          }
+          "9876543210"
         ]
       },
 
