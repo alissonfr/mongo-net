@@ -6,12 +6,8 @@ db.contrato.insertMany(
         "_id": 1,
         "descricao": "Contrato de Manutenção",
         "valorContrato": 1500,
-        "dataInicio": {
-          "$date": "2023-01-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-12-31T00:00:00Z"
-        },
+        "dataInicio": "2023-01-01T00:00:00Z",
+        "dataFinal": "2023-12-31T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -37,12 +33,8 @@ db.contrato.insertMany(
         "_id": 2,
         "descricao": "Contrato de Consultoria",
         "valorContrato": 2000,
-        "dataInicio": {
-          "$date": "2023-02-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-11-30T00:00:00Z"
-        },
+        "dataInicio": "2023-02-01T00:00:00Z",
+        "dataFinal": "2023-11-30T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -68,12 +60,8 @@ db.contrato.insertMany(
         "_id": 3,
         "descricao": "Contrato de Suporte Técnico",
         "valorContrato": 1800,
-        "dataInicio": {
-          "$date": "2023-03-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-10-31T00:00:00Z"
-        },
+        "dataInicio": "2023-03-01T00:00:00Z",
+        "dataFinal": "2023-10-31T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -99,12 +87,8 @@ db.contrato.insertMany(
         "_id": 4,
         "descricao": "Contrato de Desenvolvimento",
         "valorContrato": 2200,
-        "dataInicio": {
-          "$date": "2023-04-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-09-30T00:00:00Z"
-        },
+        "dataInicio": "2023-04-01T00:00:00Z",
+        "dataFinal": "2023-09-30T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PJ",
@@ -128,12 +112,8 @@ db.contrato.insertMany(
         "_id": 5,
         "descricao": "Contrato de Implantação",
         "valorContrato": 1900,
-        "dataInicio": {
-          "$date": "2023-05-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-08-31T00:00:00Z"
-        },
+        "dataInicio": "2023-05-01T00:00:00Z",
+        "dataFinal": "2023-08-31T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -159,12 +139,8 @@ db.contrato.insertMany(
         "_id": 6,
         "descricao": "Contrato de Treinamento",
         "valorContrato": 2500,
-        "dataInicio": {
-          "$date": "2023-06-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-07-30T00:00:00Z"
-        },
+        "dataInicio": "2023-06-01T00:00:00Z",
+        "dataFinal": "2023-07-30T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -190,12 +166,8 @@ db.contrato.insertMany(
         "_id": 7,
         "descricao": "Contrato de Infraestrutura",
         "valorContrato": 2100,
-        "dataInicio": {
-          "$date": "2023-07-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-06-30T00:00:00Z"
-        },
+        "dataInicio": "2023-07-01T00:00:00Z",
+        "dataFinal": "2023-06-30T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -221,12 +193,8 @@ db.contrato.insertMany(
         "_id": 8,
         "descricao": "Contrato de Marketing Digital",
         "valorContrato": 2300,
-        "dataInicio": {
-          "$date": "2023-08-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-05-31T00:00:00Z"
-        },
+        "dataInicio": "2023-08-01T00:00:00Z",
+        "dataFinal": "2023-05-31T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -252,12 +220,8 @@ db.contrato.insertMany(
         "_id": 9,
         "descricao": "Contrato de Análise de Dados",
         "valorContrato": 2000,
-        "dataInicio": {
-          "$date": "2023-09-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-04-30T00:00:00Z"
-        },
+        "dataInicio": "2023-09-01T00:00:00Z",
+        "dataFinal": "2023-04-30T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PF",
@@ -283,12 +247,8 @@ db.contrato.insertMany(
         "_id": 10,
         "descricao": "Contrato de Segurança da Informação",
         "valorContrato": 1800,
-        "dataInicio": {
-          "$date": "2023-10-01T00:00:00Z"
-        },
-        "dataFinal": {
-          "$date": "2023-03-31T00:00:00Z"
-        },
+        "dataInicio": "2023-10-01T00:00:00Z",
+        "dataFinal": "2023-03-31T00:00:00Z",
         "status": "ativo",
         "cliente": {
           "tipo": "PJ",
