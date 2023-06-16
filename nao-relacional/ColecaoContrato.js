@@ -1,7 +1,8 @@
 const database = 'provedor-base-mongo';
 use(database);
 
-db.contrato.insertMany([
+db.contrato.insertMany(
+  [
     {
         "_id": 1,
         "descricao": "Contrato de Manutenção",
@@ -116,7 +117,8 @@ db.contrato.insertMany([
           "tipo": "PJ",
           "cnpj": "44.555.666/0001-77",
           "razaoSocial": "Alisson Tech",
-          "email": "alissonrf@gmail.com"
+          "email": "alissonrf@gmail.com",
+          "nome": "Alisson Rodrigues"
         },
         "endereco": {
           "uf": "BA",
@@ -321,4 +323,5 @@ db.contrato.insertMany([
         },
         "telefones": []
       }
-]);
+  ]
+)
