@@ -2,6 +2,13 @@
 
 Clique <a href="https://docs.google.com/document/d/1EjqkezTIlLcTpK4R3GVpPf9aAxDDtHx_fPskdrOg3Cs/edit?usp=sharing" target="_blank">aqui</a> para acessar a documentação completa do projeto.
 
+## Integrantes do projeto
+
+- Alisson Rodrigues
+- Anderson Mendes
+- Arthur Lemos
+- Breno Tainan
+
 ## Requisitos
 
 Versão do MongoDB: [1.37.0]
@@ -34,13 +41,6 @@ Após a instalação, abra o Visual Studio Code no seu sistema.
 ## Conclusão
 
 Este documento forneceu uma visão geral do projeto de migração do banco de dados relacional MySQL para o banco de dados não relacional MongoDB em um provedor de internet. Abordamos a estrutura do projeto, e as etapas para a instalação e configuração do mesmo.
-
-## Integrantes do projeto
-
-- Alisson Rodrigues
-- Anderson Mendes
-- Arthur Lemos
-- Breno Tainan
 
 <!-- ## Modelo relacional
 
