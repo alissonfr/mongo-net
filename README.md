@@ -1,6 +1,6 @@
 # Projeto de Banco de Dados Não Relacional
 
-Clique <a href="www.google.com" target="_blank">aqui</a> para acessar a documentação completa do projeto.
+Clique <a href="https://docs.google.com/document/d/1EjqkezTIlLcTpK4R3GVpPf9aAxDDtHx_fPskdrOg3Cs/edit?usp=sharing" target="_blank">aqui</a> para acessar a documentação completa do projeto.
 
 ## Requisitos
 
