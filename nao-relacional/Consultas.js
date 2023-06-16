@@ -74,12 +74,12 @@ db.chamado.aggregate([
     $unwind: "$atendimento"
   },
   {
-    $unwind: "$atendimento.produtosUtilizados"
+    $unwind: "$atendimento.produtos"
   },
   {
     $group: {
-      _id: "$atendimento.produtosUtilizados.codProduto",
-      totalUtilizados: { $sum: "$atendimento.produtosUtilizados.quantidade" }
+      _id: "$atendimento.produtos.codProduto",
+      totalUtilizados: { $sum: "$atendimento.produtos.quantidade" }
     }
   },
   {

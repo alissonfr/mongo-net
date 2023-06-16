@@ -17,7 +17,7 @@ db.chamado.insertMany([
                 },
                 "dataFim": null,
                 "cpfFuncionario": "345.678.901-23",
-                "produtosUtilizados": [
+                "produtos": [
                     {
                         "codProduto": 1,
                         "nomeProduto": "Cabo de Rede (10m)",

@@ -7,7 +7,7 @@ a direcionar recursos e tomar decisões relacionadas à distribuição geográfi
 SELECT cidade, COUNT(*) AS total_contratos
 FROM Contrato
 WHERE status = 'ativo'
-GROUP BY cidade DESC;
+GROUP BY cidade;
 
 /***
 2. Consulta para obter o valor total de contratos fechados por mês
@@ -26,9 +26,9 @@ Essa consulta mostra os produtos mais utilizados, permitindo que os gestores ide
 estão tendo maior demanda. Isso pode auxiliar na gestão de estoque, na definição de promoções e no lançamento de novos produtos.
 */
 
-SELECT p.nome, SUM(u.quantidade) AS total_vendido
+SELECT p.nome, SUM(pa.quantidade) AS total_vendido
 FROM Produto p
-INNER JOIN ProdutoAtendimento u ON p.codProduto = u.fk_Produto_codProduto
+INNER JOIN ProdutoAtendimento pa ON p.codProduto = pa.fk_Produto_codProduto
 GROUP BY p.codProduto
 ORDER BY total_vendido DESC;
 
