@@ -28,7 +28,7 @@ estão tendo maior demanda. Isso pode auxiliar na gestão de estoque, na defini�
 
 SELECT p.nome, SUM(u.quantidade) AS total_vendido
 FROM Produto p
-INNER JOIN Utiliza u ON p.codProduto = u.fk_Produto_codProduto
+INNER JOIN ProdutoAtendimento u ON p.codProduto = u.fk_Produto_codProduto
 GROUP BY p.codProduto
 ORDER BY total_vendido DESC;
 

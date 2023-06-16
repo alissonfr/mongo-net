@@ -68,7 +68,7 @@ INSERT INTO TelefoneCliente (fk_Cliente_codCliente, telefone) VALUES
         (2, '8765432109'),
         (3, '7654321098');
 
-INSERT INTO Utiliza (fk_Produto_codProduto, fk_Atendimento_codAtendimento, data, quantidade) VALUES
+INSERT INTO ProdutoAtendimento (fk_Produto_codProduto, fk_Atendimento_codAtendimento, data, quantidade) VALUES
         (1, 1, '2023-01-05', 2),
         (2, 2, '2023-02-10', 3),
         (3, 3, '2023-03-15', 4);

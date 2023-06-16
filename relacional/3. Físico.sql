@@ -5,7 +5,7 @@ USE MONGONET;
 CREATE TABLE Funcionario (
     cpf VARCHAR(14) PRIMARY KEY,
     tipo ENUM('atendente', 'tecnico'),
-    email VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
     dataInicio DATE,
     dataFim DATE,
     senha VARCHAR(60),
@@ -68,31 +68,31 @@ CREATE TABLE Chamado (
 );
 
 CREATE TABLE TelefoneFuncionario (
-    fk_Funcionario_cpf VARCHAR(14),
-    telefone VARCHAR(25)
+    fk_Funcionario_cpf VARCHAR(14) PRIMARY KEY,
+    telefone VARCHAR(25) UNIQUE
 );
 
 CREATE TABLE TelefoneCliente (
-    fk_Cliente_codCliente INT,
-    telefone VARCHAR(25)
+    fk_Cliente_codCliente INT PRIMARY KEY,
+    telefone VARCHAR(25) UNIQUE
 );
 
-CREATE TABLE Utiliza (
+CREATE TABLE ProdutoAtendimento (
+    data DATE PRIMARY KEY,
     fk_Produto_codProduto INT,
 	fk_Atendimento_codAtendimento INT(11),
-    data DATE,
     quantidade INT
 );
 
 CREATE TABLE PessoaFisica (
-    codCliente INT,
-    cpf VARCHAR(14),
+    codCliente INT PRIMARY KEY,
+    cpf VARCHAR(14) UNIQUE,
     sexo ENUM('m', 'f')
 );
 
 CREATE TABLE PessoaJuridica (
     codCliente INT,
-    cnpj VARCHAR(18),
+    cnpj VARCHAR(18) UNIQUE,
     razaoSocial VARCHAR(60)
 );
  
@@ -122,7 +122,7 @@ ALTER TABLE TelefoneCliente ADD CONSTRAINT FK_TelefoneCliente_Cliente
     FOREIGN KEY (fk_Cliente_codCliente)
     REFERENCES Cliente (codCliente);
  
-ALTER TABLE Utiliza ADD CONSTRAINT FK_Utiliza_Produto
+ALTER TABLE ProdutoAtendimento ADD CONSTRAINT FK_ProdutoAtendimento_Produto
     FOREIGN KEY (fk_Produto_codProduto)
     REFERENCES Produto (codProduto)
     ON DELETE SET NULL;
@@ -135,6 +135,6 @@ ALTER TABLE PessoaJuridica ADD CONSTRAINT FK_PessoaJuridica_Cliente
     FOREIGN KEY (codCliente)
     REFERENCES Cliente (codCliente);
     
-ALTER TABLE Utiliza ADD CONSTRAINT FK_Utiliza_2
+ALTER TABLE ProdutoAtendimento ADD CONSTRAINT FK_ProdutoAtendimento_2
     FOREIGN KEY (fk_Atendimento_codAtendimento)
     REFERENCES Atendimento (codAtendimento);
